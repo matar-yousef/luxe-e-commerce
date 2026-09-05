@@ -9,9 +9,6 @@ use App\Models\Order;
 
 class DashboardService
 {
-    /**
-     * جلب كافة الإحصائيات المطلوبة للوحة التحكم
-     */
     public function getDashboardStats()
     {
         return [

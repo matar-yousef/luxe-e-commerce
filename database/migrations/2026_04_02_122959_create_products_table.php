@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('name');           // اسم المنتج
-            $table->text('description');     // وصف المنتج
-            $table->decimal('price', 8, 2);  // السعر (مثل 99.99)
-            $table->string('image')->nullable(); // مسار الصورة
-            $table->integer('stock')->default(0); // الكمية المتوفرة
+            $table->string('name');
+            $table->text('description');
+            $table->decimal('price', 8, 2);
+            $table->string('image')->nullable();
+            $table->integer('stock')->default(0);
             $table->timestamps();
         });
     }
